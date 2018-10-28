@@ -1,0 +1,7 @@
+my\restaurants\model\RestaurantDetailsList.class
+my\restaurants\MyRestaurantsApplication.class
+my\restaurants\service\RestaurantServiceImpl.class
+my\restaurants\model\Restaurant.class
+my\restaurants\service\IRestaurantService.class
+my\restaurants\controller\RestaurantController.class
+my\restaurants\config\WebConfig.class
