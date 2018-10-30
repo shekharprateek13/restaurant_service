@@ -1,8 +1,10 @@
 restaurant/service/model/RestaurantDetailsList.class
 restaurant/service/repository/RestaurantRepository.class
 restaurant/service/service/IRestaurantService.class
+restaurant/service/exception/ApiException.class
 restaurant/service/model/Restaurant.class
 restaurant/service/RestaurantServiceApplication.class
+restaurant/service/controller/GlobalExceptionHandler.class
 restaurant/service/controller/RestaurantController.class
 restaurant/service/config/WebConfig.class
 restaurant/service/batchservice/IRestaurantBatchService.class

@@ -1,6 +1,7 @@
 package restaurant.service.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,10 +14,16 @@ public class RestaurantServiceImpl implements IRestaurantService {
 
 	@Autowired
 	RestaurantRepository restaurantRepository;
-
+	
 	@Override
 	public Restaurant getRestaurantDetails(Integer id) {
-		return null;
+		Optional<Restaurant> optional = restaurantRepository.findById((id));
+		return optional.get();
+	}
+	
+	@Override
+	public List<Restaurant> getRestaurantDetailsByIds(List<Integer> ids) {
+		return restaurantRepository.findAllById(ids);
 	}
 
 	@Override
